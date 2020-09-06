@@ -4,7 +4,7 @@ using FormatConverter.Convert.Reader;
 
 namespace FormatConverter.Convert.Format.Json
 {
-    public class JsonReader : FileReader<string>
+    public class JsonFileReader : FileReader<string>
     {
         public override string Extention => FileNameExtention.Json;
         protected override string ReadFromFile(string path)

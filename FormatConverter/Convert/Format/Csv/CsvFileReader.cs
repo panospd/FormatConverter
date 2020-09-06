@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using FormatConverter.Convert.Expando;
 using FormatConverter.Convert.Reader;
 
 namespace FormatConverter.Convert.Format.Csv
 {
-    public class CsvReader : FileReader<List<List<string>>>
+    public class CsvFileReader : FileReader<List<List<string>>>
     {
         public override string Extention => FileNameExtention.Csv;
 

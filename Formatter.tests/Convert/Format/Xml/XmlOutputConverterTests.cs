@@ -46,15 +46,15 @@ namespace Formatter.tests.Convert.Format.Xml
             // Arrange
             var address = new SerializableExpando
             {
-                {"line1", "90 Clarence House"},
-                {"line2", "The Boulevard"}
+                { "line1", "90 Clarence House" },
+                { "line2", "The Boulevard" }
             };
 
             var output = new SerializableExpando
             {
-                {"Name", "Panos"},
-                {"Surname", "Anastasiadis"},
-                {"Address", address}
+                { "Name", "Panos" },
+                { "Surname", "Anastasiadis" },
+                { "Address", address }
             };
 
             // Act

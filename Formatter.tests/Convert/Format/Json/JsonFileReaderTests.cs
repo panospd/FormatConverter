@@ -5,9 +5,9 @@ using NUnit.Framework;
 
 namespace Formatter.tests.Convert.Format.Json
 {
-    [TestOf(nameof(JsonReader))]
+    [TestOf(nameof(JsonFileReader))]
     [TestFixture]
-    public class JsonReaderTests
+    public class JsonFileReaderTests
     {
         [TestCase(null)]
         [TestCase("")]
@@ -41,16 +41,16 @@ namespace Formatter.tests.Convert.Format.Json
             Assert.AreEqual(actualAddress.GetProperty("line2").GetString(), "The Boulevard");
         }
 
-        private JsonReader CreateClassUnderTest(Func<string> mockContent)
+        private JsonFileReader CreateClassUnderTest(Func<string> mockContent)
         {
-            return new JsonReaderTest(mockContent);
+            return new JsonFileReaderTest(mockContent);
         }
 
-        public class JsonReaderTest : JsonReader
+        public class JsonFileReaderTest : JsonFileReader
         {
             private readonly Func<string> _mockContent;
 
-            public JsonReaderTest(Func<string> mockContent)
+            public JsonFileReaderTest(Func<string> mockContent)
             {
                 _mockContent = mockContent;
             }

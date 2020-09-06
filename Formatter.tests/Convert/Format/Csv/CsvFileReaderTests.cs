@@ -7,9 +7,9 @@ using NUnit.Framework;
 
 namespace Formatter.tests.Convert.Format.Csv
 {
-    [TestOf(nameof(CsvReader))]
+    [TestOf(nameof(CsvFileReader))]
     [TestFixture]
-    public class CsvReaderTests
+    public class CsvFileReaderTests
     {
         [Test]
         public void ReadFromFile_WhenInvalidInput_ShouldThrowFormatException()
@@ -119,16 +119,16 @@ namespace Formatter.tests.Convert.Format.Csv
             result.Should().BeEquivalentTo(expected);
         }
 
-        private static CsvReader CreateClassUnderTest(Func<List<List<string>>> mockContent)
+        private static CsvFileReader CreateClassUnderTest(Func<List<List<string>>> mockContent)
         {
-            return new CsvReaderTest(mockContent);
+            return new CsvFileReaderTest(mockContent);
         }
 
-        public class CsvReaderTest : CsvReader
+        public class CsvFileReaderTest : CsvFileReader
         {
             private readonly Func<List<List<string>>> _mockContent;
 
-            public CsvReaderTest(Func<List<List<string>>> mockContent)
+            public CsvFileReaderTest(Func<List<List<string>>> mockContent)
             {
                 _mockContent = mockContent;
             }
