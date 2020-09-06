@@ -8,7 +8,7 @@ namespace FormatConverter.Convert.Output
     {
         private static IEnumerable<OutputConverter> _converters = new List<OutputConverter>();
 
-        public static OutputConverter GetConverter(OUtputConverterType type)
+        public static OutputConverter GetConverter(OutputConverterType type)
         {
             GetConverters();
 

@@ -8,7 +8,7 @@ namespace FormatConverter.Convert.Format.Xml
 {
     public class XmlOutputConverter : OutputConverter
     {
-        public override OUtputConverterType Type => OUtputConverterType.Xml;
+        public override OutputConverterType Type => OutputConverterType.Xml;
         public override string PrettySerialize(SerializableExpando output)
         {
             if (output == null)

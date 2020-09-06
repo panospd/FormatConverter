@@ -24,19 +24,19 @@ namespace FormatConverter.Convert.Format.Csv
                     continue;
                 }
 
-                AddComplexObject(result, field, values[i]);
+                AddChildExpando(result, field, values[i]);
             }
 
             return result;
         }
 
-        private static void AddComplexObject(SerializableExpando result, string complexField, string value)
+        private static void AddChildExpando(SerializableExpando result, string complexField, string value)
         {
             var intendedFields = complexField.Split("_");
 
             var relativeParent = result;
 
-            for (int j = 0; j < intendedFields.Length; j++)
+            for (var j = 0; j < intendedFields.Length; j++)
             {
                 var relativeParentFiend = intendedFields[j].Replace(" ", string.Empty);
 

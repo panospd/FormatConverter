@@ -1,6 +1,6 @@
 ﻿namespace FormatConverter.Convert.Output
 {
-    public enum OUtputConverterType
+    public enum OutputConverterType
     {
         Json = 1,
         Xml = 2

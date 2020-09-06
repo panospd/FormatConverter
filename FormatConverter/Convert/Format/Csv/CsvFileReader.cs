@@ -14,7 +14,7 @@ namespace FormatConverter.Convert.Format.Csv
         {
             using var reader = new StreamReader(path);
 
-            List<List<string>> lines = new List<List<string>>();
+            var lines = new List<List<string>>();
 
             while (!reader.EndOfStream)
             {
@@ -23,9 +23,7 @@ namespace FormatConverter.Convert.Format.Csv
                 if(line == null)
                     throw new ArgumentNullException(nameof(line));
 
-                var values = line.Split(',').ToList();
-
-                lines.Add(values);
+                lines.Add(line.Split(',').ToList());
             }
 
             return lines;

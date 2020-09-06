@@ -2,7 +2,7 @@
 {
     public abstract class OutputConverter
     {
-        public abstract OUtputConverterType Type { get; }
+        public abstract OutputConverterType Type { get; }
 
         public abstract string PrettySerialize(SerializableExpando output);
     }

@@ -5,14 +5,11 @@ namespace FormatConverter.Convert.Format.Json
 {
     public class JsonOutPutConverter : OutputConverter
     {
-        public override OUtputConverterType Type => OUtputConverterType.Json;
+        public override OutputConverterType Type => OutputConverterType.Json;
 
         public override string PrettySerialize(SerializableExpando output)
         {
-            if (output == null)
-                return "{}";
-
-            return Pretty(JsonSerializer.Serialize(output));
+            return output == null ? "{}" : Pretty(JsonSerializer.Serialize(output));
         }
 
         private static string Pretty(string json)

@@ -44,14 +44,14 @@ namespace FormatConverter
             }
         }
 
-        private static string GetResultOutput(SerializableExpando reading, OUtputConverterType oUtputType)
+        private static string GetResultOutput(SerializableExpando reading, OutputConverterType outputType)
         {
-            var jsonOutPutConverter = OutputConverterFactory.GetConverter(oUtputType);
+            var jsonOutPutConverter = OutputConverterFactory.GetConverter(outputType);
 
             return jsonOutPutConverter.PrettySerialize(reading);
         }
 
-        private static OUtputConverterType GetConverterType(string keyInput)
+        private static OutputConverterType GetConverterType(string keyInput)
         {
             var parsed = int.TryParse(keyInput, out int key);
 
@@ -61,9 +61,9 @@ namespace FormatConverter
             switch (key)
             {
                 case 1:
-                    return OUtputConverterType.Json;
+                    return OutputConverterType.Json;
                 case 2:
-                    return OUtputConverterType.Xml;
+                    return OutputConverterType.Xml;
                 default:
                     throw new ArgumentOutOfRangeException("Output type not supported");
             }
