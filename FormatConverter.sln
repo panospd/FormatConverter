@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormatConverter", "FormatConverter\FormatConverter.csproj", "{BF63D5EC-6206-40ED-B573-3C47A3E2EC97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formatter.tests", "Formatter.tests\Formatter.tests.csproj", "{76652221-EEC5-4DC4-AAF4-19457462513D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatConverter.tests", "FormatConverter.tests\FormatConverter.tests.csproj", "{76652221-EEC5-4DC4-AAF4-19457462513D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
