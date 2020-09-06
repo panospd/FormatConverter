@@ -5,7 +5,7 @@ using FormatConverter.Convert;
 using FormatConverter.Convert.Format.Csv;
 using NUnit.Framework;
 
-namespace Formatter.tests
+namespace Formatter.tests.Convert.Format.Csv
 {
     [TestOf(nameof(CsvReader))]
     [TestFixture]

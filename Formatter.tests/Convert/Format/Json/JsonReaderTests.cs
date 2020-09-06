@@ -3,7 +3,7 @@ using System.Text.Json;
 using FormatConverter.Convert.Format.Json;
 using NUnit.Framework;
 
-namespace Formatter.tests
+namespace Formatter.tests.Convert.Format.Json
 {
     [TestOf(nameof(JsonReader))]
     [TestFixture]
