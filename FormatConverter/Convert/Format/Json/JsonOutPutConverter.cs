@@ -9,14 +9,18 @@ namespace FormatConverter.Convert.Format.Json
 
         public override string PrettySerialize(SerializableExpando output)
         {
+            if (output == null)
+                return "{}";
+
             return Pretty(JsonSerializer.Serialize(output));
         }
 
-        private string Pretty(string json)
+        private static string Pretty(string json)
         {
             var options = new JsonSerializerOptions
             {
-                WriteIndented = true
+                WriteIndented = true,
+                IgnoreNullValues = true
             };
 
             var jsonElement = JsonSerializer.Deserialize<JsonElement>(json);
