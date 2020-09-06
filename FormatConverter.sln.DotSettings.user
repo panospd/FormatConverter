@@ -2,6 +2,11 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3b85453f_002Da182_002D4009_002Da91f_002Dd6b5db663ef6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ToExpando_WhenValidContent_ShouldConvertToExpando #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::76652221-EEC5-4DC4-AAF4-19457462513D::.NETCoreApp,Version=v3.1::Formatter.tests.Convert.Format.Json.JsonOutPutConverterTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::76652221-EEC5-4DC4-AAF4-19457462513D::.NETCoreApp,Version=v3.1::Formatter.tests.Convert.Format.Xml.XmlOutputConverterTests.PrettySerialize_WhenCalled_ShouldSerializeInputIntended&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::76652221-EEC5-4DC4-AAF4-19457462513D::.NETCoreApp,Version=v3.1::Formatter.tests.Convert.Format.Xml.XmlOutputConverterTests.PrettySerialize_WhenEmptyObject_ShouldSReturnEmtpyXmlString&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::76652221-EEC5-4DC4-AAF4-19457462513D::.NETCoreApp,Version=v3.1::Formatter.tests.Convert.Format.Xml.XmlOutputConverterTests.PrettySerialize_WhenEmptyObject_ShouldSReturnEmptyXmlString&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::76652221-EEC5-4DC4-AAF4-19457462513D::.NETCoreApp,Version=v3.1::Formatter.tests.Convert.Format.Xml.XmlOutputConverterTests.PrettySerialize_WhenNullObject_ShouldSReturnEmptyXmlString&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::76652221-EEC5-4DC4-AAF4-19457462513D::.NETCoreApp,Version=v3.1::Formatter.tests.Convert.Format.Xml.XmlOutputConverterTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=be60f5c3_002Da623_002D4bfc_002Dbdbe_002D4cf0cef92eac/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ToExpando_WhenValidContent_ShouldConvertToExpando" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;

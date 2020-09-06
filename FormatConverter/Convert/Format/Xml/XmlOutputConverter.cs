@@ -11,6 +11,9 @@ namespace FormatConverter.Convert.Format.Xml
         public override OUtputConverterType Type => OUtputConverterType.Xml;
         public override string PrettySerialize(SerializableExpando output)
         {
+            if (output == null)
+                return string.Empty;
+
             var xmlSerializable = XmlSerializableExpando.CreateFrom(output);
 
             using var sww = new StringWriter();
