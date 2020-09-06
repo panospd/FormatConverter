@@ -25,6 +25,8 @@ namespace FormatConverter
                     var outputType = GetConverterType(Console.ReadLine());
                     var prettyOutput = GetResultOutput(reading, outputType);
 
+                    Console.WriteLine("File Content:");
+                    Console.WriteLine(string.Empty);
                     Console.WriteLine(prettyOutput);
                 }
                 catch (FileNotFoundException e)
