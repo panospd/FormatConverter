@@ -18,7 +18,8 @@ namespace FormatConverter.Convert.Reader
                 .Replace(".", "")
                 .ToLower();
 
-            return _readers.Single(r => r.Extention == extention);
+            return _readers.SingleOrDefault(r => r.Extention == extention) ??
+                   throw new FileTypeNotSupportedException("File type is not supported!");
         }
 
         private static void GetReaders()

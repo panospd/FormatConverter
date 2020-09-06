@@ -18,8 +18,7 @@ namespace FormatConverter
                 {
                     Console.WriteLine("Please enter the full path of the file you would like to parse:");
 
-                    string path = Console.ReadLine();
-                    var reading = GetReading(path);
+                    var reading = GetReading(Console.ReadLine());
 
                     Console.WriteLine("Specify the output type: Json(1) | Xml(2)");
 
@@ -30,7 +29,12 @@ namespace FormatConverter
                 }
                 catch (FileNotFoundException e)
                 {
-                    Console.WriteLine("File could not be found. Please make sure that the file exists and the path is correct!");
+                    Console.WriteLine(
+                        "File could not be found. Please make sure that the file exists and the path is correct!");
+                    Console.WriteLine(e.Message);
+                }
+                catch (FileTypeNotSupportedException e)
+                {
                     Console.WriteLine(e.Message);
                 }
                 catch (Exception exception)
