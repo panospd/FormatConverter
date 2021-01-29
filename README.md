@@ -1,0 +1,3 @@
+# FormatConverter
+
+A console application to convert files in different formats. json to xml, xml to json, csv to json etc...
